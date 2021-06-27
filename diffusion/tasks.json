@@ -1,0 +1,39 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "echo",
+			"command": "echo ${workspaceFolder}",	//${workspaceFolder}
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: cl.exe build active file for Yousei",
+			"command": "cl.exe",
+			"args": [
+				"-Zi",
+				"-EHsc",
+				"-openmp",
+				"-Fe:",
+				"${workspaceFolder}\\${workspaceFolderBasename}.exe",
+				"${workspaceFolder}\\*.c"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: cl.exe"
+		}
+	]
+}
