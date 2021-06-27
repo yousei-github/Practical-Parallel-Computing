@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "io.h": "c",
+    "corecrt_io.h": "c",
+    "process.h": "c",
+    "windows.h": "c",
+    "omp.h": "c",
+    "stdlib.h": "c",
+    "stdio.h": "c",
+    "limits.h": "c"
+  }
+}
